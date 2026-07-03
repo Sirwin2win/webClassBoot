@@ -1,75 +1,223 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Products</title>
-    <style>
-      .starter {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.min.css" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js.map"></script>
   </head>
   <body>
-    <div class="starter">
-      <div class="card">
-        <img
-          src="speaker.avif"
-          alt="speaker"
-          style="height: 80px; width: 80px"
-        />
-        <h3>laptop Speaker</h3>
-        <i>$970</i>
-      </div>
+    <button type="button" class="btn btn-primary" id="liveToastBtn">
+      Show live toast
+    </button>
 
-      <div class="card">
-        <img.jpg
-          src="WshingMchine.jpg"
-          alt="machine"
-          style="height: 80px; width: 80px"
-        />
-        <h3>laptop Speaker</h3>
-        <i>$460</i>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="..." />
+          <strong class="me-auto">Bootstrap</strong>
+          <small>11 mins ago</small>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Hello, world! This is a toast message.</div>
       </div>
+    </div>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="custom-tooltip"
+      data-bs-title="This top tooltip is themed via CSS variables."
+    >
+      Custom tooltip
+    </button>
+    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">First</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">Second</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Dropdown</a
+          >
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#scrollspyHeading3">Third</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#scrollspyHeading4">Fourth</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#scrollspyHeading5">Fifth</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example bg-body-tertiary p-3 rounded-2"
+      tabindex="0"
+    >
+      <h4 id="scrollspyHeading1">First heading</h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus
+        magnam, voluptatem laborum facilis fugiat magni ut consectetur a quasi
+        aliquam et, porro atque, sequi enim doloribus voluptates exercitationem
+        repellat. Fuga!
+      </p>
+      <h4 id="scrollspyHeading2">Second heading</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
+        aliquam placeat provident atque blanditiis quod rerum eveniet expedita
+        commodi, odio perferendis officiis fugit laboriosam quia accusantium
+        ipsam! At, hic praesentium.
+      </p>
+      <h4 id="scrollspyHeading3">Third heading</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+        fugiat odio perspiciatis, commodi voluptas aperiam eveniet dolore quidem
+        id repudiandae molestias, ipsam, impedit alias unde veniam nisi
+        assumenda saepe facilis. Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Consequatur fugiat odio perspiciatis, commodi voluptas
+        aperiam eveniet dolore quidem id repudiandae molestias, ipsam, impedit
+        alias unde veniam nisi assumenda saepe facilis. Lorem ipsum dolor sit
+        amet, consectetur adipisicing elit. Consequatur fugiat odio
+        perspiciatis, commodi voluptas aperiam eveniet dolore quidem id
+        repudiandae molestias, ipsam, impedit alias unde veniam nisi assumenda
+        saepe facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Consequatur fugiat odio perspiciatis, commodi voluptas aperiam eveniet
+        dolore quidem id repudiandae molestias, ipsam, impedit alias unde veniam
+        nisi assumenda saepe facilis. Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Consequatur fugiat odio perspiciatis, commodi voluptas
+        aperiam eveniet dolore quidem id repudiandae molestias, ipsam, impedit
+        alias unde veniam nisi assumenda saepe facilis. Lorem ipsum dolor sit
+        amet, consectetur adipisicing elit. Consequatur fugiat odio
+        perspiciatis, commodi voluptas aperiam eveniet dolore quidem id
+        repudiandae molestias, ipsam, impedit alias unde veniam nisi assumenda
+        saepe facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Consequatur fugiat odio perspiciatis, commodi voluptas aperiam eveniet
+        dolore quidem id repudiandae molestias, ipsam, impedit alias unde veniam
+        nisi assumenda saepe facilis.
+      </p>
+      <h4 id="scrollspyHeading4">Fourth heading</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus doloribus
+        dolorem, accusantium nam cumque fuga veritatis possimus ut qui. Unde
+        error provident id eius magnam dolore reiciendis sapiente perferendis
+        odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+        doloribus dolorem, accusantium nam cumque fuga veritatis possimus ut
+        qui. Unde error provident id eius magnam dolore reiciendis sapiente
+        perferendis odit. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Natus doloribus dolorem, accusantium nam cumque fuga veritatis
+        possimus ut qui. Unde error provident id eius magnam dolore reiciendis
+        sapiente perferendis odit. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Natus doloribus dolorem, accusantium nam cumque fuga
+        veritatis possimus ut qui. Unde error provident id eius magnam dolore
+        reiciendis sapiente perferendis odit. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Natus doloribus dolorem, accusantium nam
+        cumque fuga veritatis possimus ut qui. Unde error provident id eius
+        magnam dolore reiciendis sapiente perferendis odit.
+      </p>
+      <h4 id="scrollspyHeading5">Fifth heading</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+        exercitationem illum laudantium adipisci voluptatem commodi! Delectus,
+        voluptas reiciendis aliquam aut, beatae odio velit optio ratione vitae
+        cupiditate eaque qui magnam! Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Inventore exercitationem illum laudantium adipisci
+        voluptatem commodi! Delectus, voluptas reiciendis aliquam aut, beatae
+        odio velit optio ratione vitae cupiditate eaque qui magnam! Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Inventore exercitationem
+        illum laudantium adipisci voluptatem commodi! Delectus, voluptas
+        reiciendis aliquam aut, beatae odio velit optio ratione vitae cupiditate
+        eaque qui magnam! Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Inventore exercitationem illum laudantium adipisci voluptatem
+        commodi! Delectus, voluptas reiciendis aliquam aut, beatae odio velit
+        optio ratione vitae cupiditate eaque qui magnam! Lorem ipsum dolor sit
+        amet, consectetur adipisicing elit. Inventore exercitationem illum
+        laudantium adipisci voluptatem commodi! Delectus, voluptas reiciendis
+        aliquam aut, beatae odio velit optio ratione vitae cupiditate eaque qui
+        magnam!
+      </p>
+    </div>
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-secondary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-success" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-danger" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-warning" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-info" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-light" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-dark" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
 
-      <div class="card">
-        <img
-          src="speaker.avif"
-          alt="speaker"
-          style="height: 80px; width: 80px"
-        />
-        <h3>laptop Speaker</h3>
-        <i>$870</i>
-      </div>
-
-      <div class="card">
-        <img
-          src="PowerBike.jpg"
-          alt="power bike"
-          style="height: 80px; width: 80px"
-        />
-        <h3>power bike</h3>
-        <i>$570</i>
-      </div>
-
-      <div class="card">
-        <img
-          src="WashingMachine2.jpg"
-          alt="speaker"
-          style="height: 80px; width: 80px"
-        />
-        <h3>machine</h3>
-        <i>$420</i>
-      </div>
-
-      <div class="card">
-        <img
-          src="white airpod.avif"
-          alt="speaker"
-          style="height: 80px; width: 80px"
-        />
-        <h3>air pod</h3>
-        <i>$470</i>
-      </div>
+    <div class="spinner-grow text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-secondary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-success" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-danger" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-warning" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-info" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-light" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-dark" role="status">
+      <span class="visually-hidden">Loading...</span>
     </div>
   </body>
 </html>

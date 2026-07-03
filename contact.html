@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.min.css" />
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Menu Bar Started -->
     <nav class="navbar navbar-expand-lg bg-primary">
       <div class="container-fluid">
@@ -112,91 +113,197 @@
       </div>
     </nav>
     <!-- Nav Bar Ended -->
-     <!-- Form started -->
-      <div class="container my-4">
+    <!--responsive  Form  Started -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
           <form class="mb-5">
             <p class="h5 text-primary text-center">Send Us an Email</p>
             <div>
-                <label for="name" class="form-label">Full Name</label>
-                  <input type="text" id="name" class="form-control" placeholder="Enter your full name e.g John Doe">
-
+              <label for="name" class="form-label">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="Enter your full name e.g John Doe"
+              />
             </div>
             <div class="my-4">
-                <label for="subject" class="form-label">Subject</label>
-                  <input type="text" id="subject" class="form-control" placeholder="Enter Email Subject e.g Enquiry">
-
+              <label for="subject" class="form-label">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                class="form-control"
+                placeholder="Enter Email Subject e.g Enquiry"
+              />
             </div>
             <div>
-                <label for="email" class="form-label">Email</label>
-                  <input type="text" id="email" class="form-control" placeholder="Enter your Email e.g emaill@example.com">
-
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="text"
+                id="email"
+                class="form-control"
+                placeholder="Enter your Email e.g emaill@example.com"
+              />
             </div>
             <div class="my-4">
-                <label for="body" class="form-label">Body</label>
-                 <textarea name="body" id="body" class="form-control" style="height: 200px;"></textarea>
-
+              <label for="body" class="form-label">Body</label>
+              <textarea
+                name="body"
+                id="body"
+                class="form-control"
+                style="height: 200px"
+              ></textarea>
             </div>
-            <button class="btn btn-primary" style="width: 100%;font-weight: 600;">Send</button>
-          </form>
-
-          <!-- Second Form Started -->
-           <form>
-            <div class="row">
-                <div class="col">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" class="form-control" placeholder="John">
-                </div>
-                <div class="col">
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" class="form-control" placeholder="Doe">
-                </div>
-            </div>
-            <div class="my-4">
-                <label for="phone">Phone Number</label>
-                <input type="text" id="phone" class="form-control" placeholder="+234 804444444444">
-            </div>
-            <div>
-                <label for="address">Address</label>
-                <input type="text" id="address" class="form-control" placeholder="Enter your address">
-            </div>
-            <div class="row">
-                <div class="col my-4">
-                    <input type="radio" id="male" class="form-radio-input">
-                    <label for="male">Male</label>
-                </div>
-                <div class="col my-4">
-                    <input type="radio" id="female" class="form-radio-input">
-                    <label for="female">Female</label>
-                </div>
-
-            </div>
-            <div>
-                <input type="checkbox" class="form-check-input">
-                <a href="#" style="text-decoration: none;">I agree</a>
-            </div>
-            <div class="input-group flex-nowrap">
-  <span class="input-group-text" id="addon-wrapping">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-</div>
-            <button class="flex btn btn-primary mt-3" style="width: 100%;">
-                <span class="me-2">Submit</span>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-</svg>
-               
+            <button
+              class="btn btn-primary"
+              style="width: 100%; font-weight: 600"
+            >
+              Send
             </button>
-           </form>
-          <!-- Second Form Ended -->
-
+          </form>
+        </div>
       </div>
+    </div>
+
+    <!--responsive Form  Ended -->
+    <!-- Form started -->
+
+    <div class="container my-4">
+      <form class="mb-5">
+        <p class="h5 text-primary text-center">Send Us an Email</p>
+        <div>
+          <label for="name" class="form-label">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            placeholder="Enter your full name e.g John Doe"
+          />
+        </div>
+        <div class="my-4">
+          <label for="subject" class="form-label">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            class="form-control"
+            placeholder="Enter Email Subject e.g Enquiry"
+          />
+        </div>
+        <div>
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="text"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email e.g emaill@example.com"
+          />
+        </div>
+        <div class="my-4">
+          <label for="body" class="form-label">Body</label>
+          <textarea
+            name="body"
+            id="body"
+            class="form-control"
+            style="height: 200px"
+          ></textarea>
+        </div>
+        <button class="btn btn-primary" style="width: 100%; font-weight: 600">
+          Send
+        </button>
+      </form>
+
+      <!-- Second Form Started -->
+      <form>
+        <div class="row">
+          <div class="col">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              class="form-control"
+              placeholder="John"
+            />
+          </div>
+          <div class="col">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              class="form-control"
+              placeholder="Doe"
+            />
+          </div>
+        </div>
+        <div class="my-4">
+          <label for="phone">Phone Number</label>
+          <input
+            type="text"
+            id="phone"
+            class="form-control"
+            placeholder="+234 804444444444"
+          />
+        </div>
+        <div>
+          <label for="address">Address</label>
+          <input
+            type="text"
+            id="address"
+            class="form-control"
+            placeholder="Enter your address"
+          />
+        </div>
+        <div class="row">
+          <div class="col my-4">
+            <input type="radio" id="male" class="form-radio-input" />
+            <label for="male">Male</label>
+          </div>
+          <div class="col my-4">
+            <input type="radio" id="female" class="form-radio-input" />
+            <label for="female">Female</label>
+          </div>
+        </div>
+        <div>
+          <input type="checkbox" class="form-check-input" />
+          <a href="#" style="text-decoration: none">I agree</a>
+        </div>
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">@</span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            aria-label="Username"
+            aria-describedby="addon-wrapping"
+          />
+        </div>
+        <button class="flex btn btn-primary mt-3" style="width: 100%">
+          <span class="me-2">Submit</span>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+            />
+          </svg>
+        </button>
+      </form>
+      <!-- Second Form Ended -->
+    </div>
     <!-- Form Ended -->
-     <!-- Button Started -->
-      <button class="btn btn-danger">Button</button>
-      <button class="btn btn-info">Button</button>
-      <button class="btn btn-warning">Button</button>
-     <!-- Button Ended -->
-     <!-- Footer Started -->
+    <!-- Button Started -->
+    <button class="btn btn-danger">Button</button>
+    <button class="btn btn-info">Button</button>
+    <button class="btn btn-warning">Button</button>
+    <!-- Button Ended -->
+    <!-- Footer Started -->
     <div class="row bg-primary p-5">
       <!-- Col 1 started -->
       <div class="col-sm-4">
@@ -357,5 +464,5 @@
       </div>
     </div>
     <!-- Footer Ended -->
-</body>
+  </body>
 </html>

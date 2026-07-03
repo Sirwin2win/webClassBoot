@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.min.css" />
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
@@ -113,13 +114,17 @@
       </div>
     </nav>
     <!-- Nav Bar Ended -->
+    <!-- Images Started -->
     <div class="row ms-5 my-5">
       <div class="col-sm-4">
         <img
           src="images/ceo.avif"
           style="height: 200px; width: 200px; border-radius: 50%"
           alt=""
+          data-bs-toggle="modal"
+          data-bs-target="#ceo"
         />
+
         <h5 class="ms-5">John Doe</h5>
         <p class="ms-3">CEO Avif Company</p>
       </div>
@@ -128,7 +133,10 @@
           src="images/accountant.avif"
           style="height: 200px; width: 200px; border-radius: 50%"
           alt=""
+          data-bs-toggle="modal"
+          data-bs-target="#acc"
         />
+
         <h5 class="ms-5">Jane Doe</h5>
         <p class="ms-3">Accountant Avif Company</p>
       </div>
@@ -137,11 +145,140 @@
           src="images/softwareDev.avif"
           style="height: 200px; width: 200px; border-radius: 50%"
           alt=""
+          data-bs-toggle="modal"
+          data-bs-target="#soft"
         />
+
         <h5 class="ms-5">Peter Doe</h5>
         <p class="ms-3">Software Engr. Avif Company</p>
       </div>
     </div>
+    <!-- Images Ended -->
+    <!-- CEO Modal body started -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="ceo"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Mr Adekunle Festus
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/ceo.avif"
+              style="height: 500px; width: 450px"
+              alt=""
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CEO Modal body ended -->
+    <!-- acc Modal body started -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="acc"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Jane Doe</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/accountant.avif"
+              style="height: 500px; width: 450px"
+              alt=""
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- acc Modal body ended -->
+    <!-- soft Modal body started -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="soft"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Peter Doe</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/softwareDev.avif"
+              style="height: 500px; width: 450px"
+              alt=""
+            />
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- soft Modal body ended -->
     <!-- Footer Started -->
     <div class="row bg-primary p-5">
       <!-- Col 1 started -->
